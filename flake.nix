@@ -51,8 +51,8 @@
       let
         org = "pythoneda-external-artf";
         repo = "nixpkgs";
-        version = "0.0.1";
-        sha256 = "0vw20idqb36xmy2cb92rqv3jnvfmc4qqszkj9v7yfaw2ipmcy937";
+        version = "0.0.2";
+        sha256 = "18v2qb5hgym9nm0ih78brspim0g8smxnxfly5z5cg6hbb55lqxrw";
         pname = "${org}-${repo}";
         pythonpackage = "pythoneda.artifact.external.nixpkgs";
         package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
