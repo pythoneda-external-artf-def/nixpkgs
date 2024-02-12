@@ -93,9 +93,11 @@
               desc = description;
               inherit homepage pname pythonMajorMinorVersion pythonpackage
                 version;
-              pythonedaSharedBanner =
+              pythonedaSharedNixFlakeShared =
+                pythoneda-shared-nix-flake-shared.version;
+              pythonedaSharedPythonlangBanner =
                 pythoneda-shared-pythonlang-banner.version;
-              pythonedaSharedDomain =
+              pythonedaSharedPythonlangDomain =
                 pythoneda-shared-pythonlang-domain.version;
 
               package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
