@@ -24,19 +24,19 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-nix-flake-def/shared/0.0.64";
+      url = "github:pythoneda-shared-nix-flake-def/shared/0.0.75";
     };
     pythoneda-shared-pythonlang-banner = {
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixos.follows = "nixos";
-      url = "github:pythoneda-shared-pythonlang-def/banner/0.0.62";
+      url = "github:pythoneda-shared-pythonlang-def/banner/0.0.71";
     };
     pythoneda-shared-pythonlang-domain = {
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixos.follows = "nixos";
       inputs.pythoneda-shared-pythonlang-banner.follows =
         "pythoneda-shared-pythonlang-banner";
-      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.76";
+      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.90";
     };
   };
   outputs = inputs:
@@ -51,8 +51,8 @@
       let
         org = "pythoneda-external-artf";
         repo = "nixpkgs";
-        version = "0.0.2";
-        sha256 = "18v2qb5hgym9nm0ih78brspim0g8smxnxfly5z5cg6hbb55lqxrw";
+        version = "0.0.3";
+        sha256 = "0lsv6a9nxzvysky7vmq0rzlagqnlj572hgd7ivkkpjig0iqn8sr5";
         pname = "${org}-${repo}";
         pythonpackage = "pythoneda.artifact.external.nixpkgs";
         package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
